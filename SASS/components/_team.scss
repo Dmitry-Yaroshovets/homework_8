@@ -1,0 +1,120 @@
+.team {
+  padding: 60px 0 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0 94px 0;
+  }
+  background: var(--secondary-white-color);
+}
+.team__item {
+  width: 100%;
+  background: var(--white-color);
+  box-shadow: var(--card-shadow);
+  border-radius: 0px 0px 4px 4px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.team__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    font-style: 36px;
+    margin-bottom: 50px;
+  }
+}
+.team__list {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.card-team {
+  padding: 30px 0 30px 0;
+}
+.card-team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+.card-team__profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+.card-team__name b {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.card-team__icon {
+  fill: currentColor;
+  stroke: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.card-team__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.card-team__item:not(:last-child) {
+  margin-right: 10px;
+}
+.card-team__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  color: var(--social-icon-color);
+  background-color: var(--white-color);
+  border-radius: 50%;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
+}
