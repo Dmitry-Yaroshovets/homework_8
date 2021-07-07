@@ -57,50 +57,60 @@
             </a>
           </li>
         </ul> -->
-
-        
-          <!-- мобильное меню вторая попитка -->
-          <button type="button" class="menu-open">O</button>
-        
+        <button type="button" class="menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        ><svg class="icon" width="40" height="40">
+          <use href="./images/icon/sprite.svg#icon-open-mobile"></use>
+        </svg></button>
       </div>
-      <div class="mobile-nav">
-        <div class="container">
-        <button type="button" class="menu-close">X</button>
+
+      <!-- мобильное меню вторая попитка -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="conteiner"></div>
+        <button type="button" class="mobile-menu__close mobile-menu__close--close js-close-menu">
+          <svg class="icon" width="40" height="40">
+            <use href="./images/icon/sprite.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+      
         <nav>
           <ul class="mobile-menu">
             <li class="mobile-menu__item">
-              <a href="./index.html" class="mobile-menu__link">Студия</a></li>
+              <a href="./index.html" class="mobile-menu__link">Студия</a>
+            </li>
             <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфолио
               </a>
             </li>
             <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты
               </a></li>
           </ul>
-          <div class="mobile-nav__botton">
-              <ul class="mobile-contacts">
-                <li class="mobile-contacts__link"><a href="tel:+380961111111" class="mobile-contacts__link">+38 096 111 11 11</a></li>
-                <li class="mobile-contacts__link"><a href="mailto:info@devstudio.com" class="mobile-contacts__link">info@devstudio.com</a></li>
-              </ul>
-              <ul class="mobile-media">
-                <li class="mobile-media__item">
-                  <a href="" class="mobile-media__link">Instagram</a>
-                </li>
-                <li class="mobile-media__item">
-                  <a href="" class="mobile-media__link">Twitter</a>
-                </li>
-                <li class="mobile-media__item">
-                  <a href="" class="mobile-media__link">Facebook</a>
-                </li>
-                <li class="mobile-media__item">
-                  <a href="" class="mobile-media__link">LinkedIn</a>
-                </li>
-              </ul>
-          </div>
-          
-
         </nav>
+        <div class="mobile-nav__botton">
+          <ul class="mobile-contacts">
+            <li class="mobile-contacts__item"><a href="tel:+380961111111" class="mobile-contacts__link">+38 096 111 11
+                11</a></li>
+            <li class="mobile-contacts__item"><a href="mailto:info@devstudio.com"
+                class="mobile-contacts__link">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile-media">
+            <li class="mobile-media__item">
+              <a href="" class="mobile-media__link">Instagram</a>
+            </li>
+            <li class="mobile-media__item">
+              <a href="" class="mobile-media__link">Twitter</a>
+            </li>
+            <li class="mobile-media__item">
+              <a href="" class="mobile-media__link">Facebook</a>
+            </li>
+            <li class="mobile-media__item">
+              <a href="" class="mobile-media__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
         </div>
       </div>
+      
     </header>
 
     <main>
@@ -548,5 +558,9 @@
       
     </footer>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
