@@ -19,13 +19,15 @@
     <!--header-->
     <header>
       <div class="container">
+        
         <nav class="site-nav">
           <a href="./index.html" class="site-nav__logo-link">
             <span class="site-nav__web-logo">Web</span>
             <span class="site-nav__studio-logo">Studio</span>
           </a>
-        
-          <!-- <ul class="nav-list">
+        </nav>
+        <div class="nav-wraper">
+          <ul class="nav-list">
             <li class="nav-list__item">
               <a href="./index.html" class="nav-list__link activ"><b>Студия</b></a>
             </li>
@@ -38,8 +40,8 @@
               <a href="#contacts" class="nav-list__link"><b>Контакты</b></a>
             </li>
             <li></li>
-          </ul> -->
-        </nav> 
+          </ul>
+        </div>
         <!-- <ul class="header-contact-list">
           <li class="header-contact-list__item">
             <a href="mailto:info@devstudio.com" class="header-contact-list__link ">
@@ -57,18 +59,20 @@
             </a>
           </li>
         </ul> -->
-        <button type="button" class="menu-open js-open-menu"
+        <button type="button" class="menu-button js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
         ><svg class="icon" width="40" height="40">
           <use href="./images/icon/sprite.svg#icon-open-mobile"></use>
         </svg></button>
+        
+
       </div>
 
       <!-- мобильное меню вторая попитка -->
       <div class="menu-container js-menu-container" id="mobile-menu">
-        <div class="conteiner"></div>
-        <button type="button" class="mobile-menu__close mobile-menu__close--close js-close-menu">
+        <!-- <div class="conteiner"></div> -->
+        <button type="button" class="menu-button menu-button__close js-close-menu">
           <svg class="icon" width="40" height="40">
             <use href="./images/icon/sprite.svg#icon-close-black-18dp"></use>
           </svg>
