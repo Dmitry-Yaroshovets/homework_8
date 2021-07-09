@@ -257,12 +257,22 @@ header {
 
 .mobile-media {
   display: flex;
+  align-items: center;
 }
 
 .mobile-media__item:not(:last-child) {
   margin-right: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-media {
+    flex-wrap: wrap;
+  }
+  .mobile-media__item {
+    margin-bottom: 10px;
+  }
 }
 
 .mobile-media__link {
@@ -291,7 +301,26 @@ header {
   }
 }
 
+.menu-button__close {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: #fff;
+}
+
+.menu-button__close:hover {
+  fill: var(--accent-color);
+}
+
 .icon-open {
+  display: block;
+  outline: none;
+  background-color: #fff;
+  fill: currentColor;
+}
+
+.icon-close {
   display: block;
   outline: none;
   background-color: #fff;
