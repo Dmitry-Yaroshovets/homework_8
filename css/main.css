@@ -169,9 +169,6 @@ header .container {
 
 header {
   background-color: var(--white-color);
-}
-
-.header {
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -198,6 +195,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 48px 40px;
+  z-index: 2;
 }
 
 .menu-container.is-open {
@@ -306,11 +304,12 @@ header {
   position: absolute;
   top: 10px;
   right: 15px;
+  border: none;
   background-color: #fff;
 }
 
 .menu-button__close:hover {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .icon-open {
@@ -1193,6 +1192,9 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+  .menu__item {
+    margin-left: 0px;
+  }
   .menu__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1200,7 +1202,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .menu__item {
-    width: calc((100% - 60px) / 2);
+    flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
   }
