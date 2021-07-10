@@ -3,10 +3,17 @@ header .container {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  // padding-top: 24px;
-  // padding-bottom: 25px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  @media screen and(max-width:1199px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .site-nav {
@@ -15,6 +22,9 @@ header .container {
   flex-wrap: wrap;
   align-items: center;
 }
+.site-nav__logo-link {
+  display: flex;
+}
 .site-nav__web-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -22,6 +32,16 @@ header .container {
   line-height: 1.19;
 
   color: var(--accent-color);
+  @media screen and(max-width:1200px) {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+
+    color: vr(--accent-color);
+  }
 }
 .site-nav__studio-logo {
   font-family: Raleway;
@@ -30,10 +50,27 @@ header .container {
   line-height: 1.19;
 
   color: var(--title-text-color);
+  @media screen and(max-width:1200px) {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+  }
 }
 .nav-list {
   display: flex;
-  padding-left: 93px;
+  align-items: center;
+  padding-left: 0px;
+  @media screen and(max-width:1199px) {
+    align-items: center;
+  }
+}
+.nav-list__item {
+  align-items: center;
 }
 .nav-list__item:not(:last-child) {
   margin-right: 50px;
@@ -42,6 +79,8 @@ header .container {
   position: relative;
   content: "";
   display: block;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -56,6 +95,16 @@ header .container {
   a .activ {
     color: var(--accent-color);
   }
+  @media screen and(max-width:1199px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1333;
+    letter-spacing: 0.02em;
+
+    color: var(--title-text-color);
+  }
 }
 .activ {
   &::after {
@@ -64,29 +113,62 @@ header .container {
     width: 100%;
     height: 4px;
     left: 0px;
-    top: 40px;
+    top: 45px;
     border-radius: 2px;
     background-color: var(--accent-color);
+  }
+  @media screen and(max-width:1199px) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 4px;
+      left: 0px;
+      top: 41px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+    }
   }
 }
 
 .header-contact-list {
   display: flex;
   align-items: center;
+  margin-left: 305px;
+  @media screen and(max-width:1199px) {
+    display: block;
+    margin-left: 84px;
+  }
 }
 .header-contact-list__item {
-  display: flex;
-  &:not(:last-child) {
-    margin-right: 50px;
+  // &:not(:last-child) {
+  //   margin-bottom: 10px;
+  // }
+  @media screen and(max-width:1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 .header-contact-list__item svg {
   margin-right: 10px;
+  border-color: var(--primary-text-color);
+  @media screen and(max-width:1199px) {
+    margin-right: 8px;
+  }
 }
 
 .header-contact-list__link {
   display: flex;
   align-items: center;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
@@ -100,6 +182,28 @@ header .container {
   &:active {
     color: var(--accent-color);
     fill: currentColor;
+  }
+  @media screen and(max-width:1199px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+  }
+}
+.header-contact-list__link--mail svg {
+  @media screen and(max-width:1199px) {
+    width: 14px;
+    height: 10px;
+  }
+}
+.header-contact-list__link--tell svg {
+  @media screen and(max-width:1199px) {
+    width: 10px;
+    height: 14px;
   }
 }
 
