@@ -907,6 +907,8 @@ header {
 }
 
 .advantage__title {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
@@ -923,6 +925,8 @@ header {
 }
 
 .advantage__text {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -975,6 +979,8 @@ header {
 }
 
 .team__title {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -1015,6 +1021,8 @@ header {
 }
 
 .card-team__profession {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -1132,6 +1140,8 @@ header {
 }
 
 .clients__title {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -1476,6 +1486,8 @@ header {
 }
 
 .footcontact__address {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -1491,23 +1503,21 @@ header {
   }
 }
 
-.footcontact__item {
-  text-align: center;
-}
-
 @media screen and (max-width: 1199px) {
   .footcontact__item:nth-child(2) {
     margin-bottom: 8px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footcontact__item:nth-child(2) {
-    margin-bottom: 9px;
+@media screen and (max-width: 1199px) and (max-width: 1199px) {
+  .footcontact__item {
+    text-align: center;
   }
 }
 
 .footcontact__mail-link {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -1520,7 +1530,15 @@ header {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .footcontact__mail-link {
+    margin-bottom: 0px;
+  }
+}
+
 .footcontact__tel-link {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -1543,6 +1561,8 @@ header {
 }
 
 .sociallink__title {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: inherit;
