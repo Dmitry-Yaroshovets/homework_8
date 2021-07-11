@@ -54,6 +54,7 @@
 
   @media screen and (min-width: 480px) {
     width: 450px;
+    margin-top: 15px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -85,9 +86,10 @@
 
 .modal__title {
   text-align: center;
-  margin-top: 20px;
   margin-bottom: 12px;
-  font-weight: 700;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -148,10 +150,13 @@
 }
 
 .form-comment__label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   text-align: left;
   display: block;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.166;
   letter-spacing: 0.01em;
 }
 
@@ -163,15 +168,20 @@
   margin-top: 4px;
   margin-bottom: 20px;
   resize: none;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.166;
   letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  @media screen and (max-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.142;
+  }
 }
 
 .checkbox {
@@ -205,7 +215,7 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
   &:checked + .checkbox__icon {
-    background-image: url(../images/icon/icon/check.svg);
+    background-image: url(/images/icon-check.svg);
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     background-size: contain;
@@ -216,7 +226,7 @@
   display: inline-block;
   width: 16px;
   height: 15px;
-  background-color: var(--white-color);
+  color: var(--white-color);
   border-radius: 4px;
   border: 2px solid rgba(0, 0, 0, 1);
   transition-property: background-color, border;
@@ -232,13 +242,28 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.166;
+  }
 }
 .checkbox__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   text-decoration: underline;
   color: var(--accent-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+}
 .form-button {
   display: block;
   margin-left: auto;
@@ -251,7 +276,9 @@
   color: var(--white-color);
   border-radius: 4px;
   border: 0px solid transparent;
-  font-weight: 700;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
